@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đồng Cỏ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      font-size: 20px;
+    }
+    header {
+            background-image: url('../img/grassland1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        header:hover h1 {
+            opacity: 0;
+        }
+        header::after {
+            content: 'Return to Previous Page';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        header:hover::after {
+            opacity: 1; 
+        }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #6B8E23;
+    }
+    img {
+        width: 800px; 
+      height: 600px; 
+      object-fit: cover; 
+      display: block;
+      border-radius: 10px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section p {
+      text-align: justify;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header onclick="goBack()">
+    <h1>Đồng Cỏ</h1>
+    <p>Khám phá hệ sinh thái đồng cỏ rộng lớn và đa dạng trên thế giới</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Giới thiệu chung</h2>
+      <img src="../img/grassland2.jpg" alt="Đồng Cỏ">
+      <p>Đồng cỏ là hệ sinh thái chủ yếu bao gồm cỏ và các loài thực vật thân thảo, phân bố rộng rãi ở cả vùng nhiệt đới và ôn đới.</p>
+    </div>
+
+    <div class="section">
+      <h2>Phân bố địa lý</h2>
+      <p>Đồng cỏ phân bố ở nhiều khu vực trên thế giới, bao gồm Bắc Mỹ (đồng cỏ Great Plains), châu Phi (savanna), châu Á (thảo nguyên) và châu Âu.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đặc điểm khí hậu</h2>
+      <p>Khí hậu đa dạng, từ khô hạn đến ẩm ướt. Lượng mưa trung bình hàng năm thường từ 250 đến 900 mm, phù hợp cho sự phát triển của cỏ.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đa dạng sinh học</h2>
+      <img src="../img/grassland3.jpg" alt="Đa dạng sinh học Đồng Cỏ">
+      <p>Đồng cỏ là nơi sinh sống của nhiều loài động vật như bò rừng, ngựa vằn, sư tử, linh dương và nhiều loài chim. Thực vật chủ yếu là cỏ và cây bụi.</p>
+    </div>
+
+    <div class="section">
+      <h2>Thảm thực vật</h2>
+      <p>Thảm thực vật chủ yếu là cỏ, với một số loài cây bụi và cây gỗ nhỏ. Cỏ có khả năng chịu hạn và phục hồi nhanh sau khi bị gặm cỏ.</p>
+    </div>
+
+    <div class="section">
+      <h2>Vai trò sinh thái</h2>
+      <p>Đồng cỏ đóng vai trò quan trọng trong việc duy trì đa dạng sinh học, điều hòa khí hậu và bảo vệ đất. Chúng cũng là nguồn cung cấp thức ăn cho gia súc.</p>
+    </div>
+
+    <div class="section">
+      <h2>Tác động của con người</h2>
+      <img src="../img/grassland4.jpg" alt="Tác động của con người lên đồng cỏ">
+      <p>Con người chăn thả gia súc quá mức, chuyển đổi đồng cỏ thành đất nông nghiệp và đô thị hóa, dẫn đến suy thoái đất và mất đa dạng sinh học.</p>
+    </div>
+
+    <div class="section">
+      <h2>Bảo tồn</h2>
+      <p>Các nỗ lực bảo tồn bao gồm quản lý bền vững đồng cỏ, phục hồi hệ sinh thái và bảo vệ các loài động thực vật quý hiếm.</p>
+    </div>
+
+    <div class="section">
+      <h2>Kết luận</h2>
+      <p>Đồng cỏ là một hệ sinh thái quan trọng, mang lại nhiều lợi ích cho con người và môi trường. Cần có biện pháp bảo vệ và phát triển bền vững để duy trì sự cân bằng sinh thái.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 | Trang web về Đồng Cỏ</p>
+  </footer>
+  <script>
+    function goBack() {
+        window.history.back(); 
+    }
+</script>
+</body>
+</html>

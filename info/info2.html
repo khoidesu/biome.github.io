@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rừng Taiga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      font-size: 20px;
+    }
+    header {
+            background-image: url('../img/taiga1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        header:hover h1 {
+            opacity: 0;
+        }
+        header::after {
+            content: 'Return to Previous Page';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        header:hover::after {
+            opacity: 1; 
+        }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #ffffff;
+    }
+    img {
+      width: 800px; 
+      height: 600px; 
+      object-fit: cover; 
+      display: block;
+      border-radius: 10px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section p {
+      text-align: justify;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header onclick="goBack()">
+    <h1>Rừng Mưa Nhiệt Đới</h1>
+    <p>Khám phá hệ sinh thái đa dạng và quan trọng nhất trên Trái Đất</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Giới thiệu chung</h2>
+      <img src="../img/taiga2.jpg" alt="Rừng Taiga">
+      <p>Rừng Taiga, còn được gọi là rừng phương Bắc, là một trong những hệ sinh thái lớn nhất thế giới, phân bố chủ yếu ở vùng khí hậu lạnh giá của Bắc bán cầu.</p>
+    </div>
+
+    <div class="section">
+      <h2>Phân bố địa lý</h2>
+      <p>Rừng Taiga trải dài qua các quốc gia như Canada, Nga, Alaska (Mỹ), và một phần Scandinavia. Đây là khu vực rừng lớn nhất thế giới, chiếm khoảng 17% diện tích đất liền.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đặc điểm khí hậu</h2>
+      <p>Khí hậu lạnh giá với mùa đông dài và khắc nghiệt, nhiệt độ có thể xuống dưới -50°C. Mùa hè ngắn và ấm áp hơn, nhiệt độ trung bình khoảng 10-20°C.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đa dạng sinh học</h2>
+      <img src="../img/taiga3.jpg" alt="Đa dạng sinh học Taiga">
+      <p>Rừng Taiga là nơi sinh sống của nhiều loài động thực vật đặc trưng như cây lá kim (thông, linh sam), gấu nâu, sói, tuần lộc và nhiều loài chim di cư.</p>
+    </div>
+
+    <div class="section">
+      <h2>Thảm thực vật</h2>
+      <p>Thảm thực vật chủ yếu là cây lá kim, với các loài như thông, linh sam và vân sam. Cây cối thường thấp và mọc dày đặc để thích nghi với khí hậu lạnh.</p>
+    </div>
+
+    <div class="section">
+      <h2>Vai trò sinh thái</h2>
+      <p>Rừng Taiga đóng vai trò quan trọng trong việc hấp thụ CO2 và điều hòa khí hậu toàn cầu. Nó cũng là nơi cung cấp nguồn tài nguyên gỗ lớn.</p>
+    </div>
+
+    <div class="section">
+      <h2>Tác động của con người</h2>
+      <img src="../img/taiga4.jpg" alt="Khai thác gỗ ở Taiga">
+      <p>Con người khai thác gỗ, khoáng sản và xây dựng cơ sở hạ tầng, dẫn đến suy thoái môi trường và mất đa dạng sinh học.</p>
+    </div>
+
+    <div class="section">
+      <h2>Bảo tồn</h2>
+      <p>Các nỗ lực bảo tồn bao gồm thành lập các khu bảo tồn, quản lý bền vững tài nguyên rừng và nâng cao nhận thức cộng đồng.</p>
+    </div>
+
+    <div class="section">
+      <h2>Kết luận</h2>
+      <p>Rừng Taiga là một hệ sinh thái quan trọng, cung cấp nhiều lợi ích cho con người và môi trường. Cần có biện pháp bảo vệ và phát triển bền vững để duy trì sự cân bằng sinh thái.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 | Trang web về Rừng Taiga</p>
+  </footer>
+  <script>
+    function goBack() {
+        window.history.back(); 
+    }
+</script>
+</body>
+</html>

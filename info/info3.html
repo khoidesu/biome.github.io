@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rừng Ôn Đới</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      font-size: 20px;
+    }
+    header {
+            background-image: url('../img/temperate1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        header:hover h1 {
+            opacity: 0;
+        }
+        header::after {
+            content: 'Return to Previous Page';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        header:hover::after {
+            opacity: 1; 
+        }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #8B4513;
+    }
+    img {
+        width: 800px; 
+      height: 600px; 
+      object-fit: cover; 
+      display: block;
+      border-radius: 10px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section p {
+      text-align: justify;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header onclick="goBack()">
+    <h1>Rừng Ôn Đới</h1>
+    <p>Khám phá hệ sinh thái rừng đặc trưng của vùng khí hậu ôn đới</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Giới thiệu chung</h2>
+      <img src="../img/temperate2.jpg" alt="Rừng Ôn Đới">
+      <p>Rừng ôn đới là hệ sinh thái rừng phân bố chủ yếu ở vùng khí hậu ôn đới, với bốn mùa rõ rệt. Chúng chiếm khoảng 33% diện tích rừng trên thế giới.</p>
+    </div>
+
+    <div class="section">
+      <h2>Phân bố địa lý</h2>
+      <p>Rừng ôn đới phân bố rộng rãi ở Bắc Mỹ, châu Âu, Đông Á và một phần Nam bán cầu như Chile, Australia và New Zealand.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đặc điểm khí hậu</h2>
+      <p>Khí hậu ôn hòa với bốn mùa rõ rệt: xuân, hạ, thu, đông. Lượng mưa trung bình hàng năm từ 750 đến 1500 mm.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đa dạng sinh học</h2>
+      <img src="../img/temperate3.jpg" alt="Đa dạng sinh học Rừng Ôn Đới">
+      <p>Rừng ôn đới là nơi sinh sống của nhiều loài động thực vật như sồi, phong, hươu, gấu, và nhiều loài chim. Đây là hệ sinh thái có độ đa dạng sinh học cao.</p>
+    </div>
+
+    <div class="section">
+      <h2>Thảm thực vật</h2>
+      <p>Thảm thực vật chủ yếu bao gồm cây rụng lá (sồi, phong) và cây lá kim (thông, linh sam). Một số khu vực còn có rừng mưa ôn đới.</p>
+    </div>
+
+    <div class="section">
+      <h2>Vai trò sinh thái</h2>
+      <p>Rừng ôn đới đóng vai trò quan trọng trong việc hấp thụ CO2, điều hòa khí hậu và bảo vệ đất. Chúng cũng cung cấp nguồn tài nguyên gỗ và lâm sản.</p>
+    </div>
+
+    <div class="section">
+      <h2>Tác động của con người</h2>
+      <img src="../img/temperate4.jpg" alt="Khai thác rừng ôn đới">
+      <p>Con người khai thác gỗ, mở rộng đất nông nghiệp và xây dựng đô thị, dẫn đến suy thoái rừng và mất đa dạng sinh học.</p>
+    </div>
+
+    <div class="section">
+      <h2>Bảo tồn</h2>
+      <p>Các nỗ lực bảo tồn bao gồm thành lập các khu bảo tồn, quản lý bền vững tài nguyên rừng và phục hồi hệ sinh thái.</p>
+    </div>
+
+    <div class="section">
+      <h2>Kết luận</h2>
+      <p>Rừng ôn đới là một hệ sinh thái quan trọng, mang lại nhiều lợi ích cho con người và môi trường. Cần có biện pháp bảo vệ và phát triển bền vững để duy trì sự cân bằng sinh thái.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 | Trang web về Rừng Ôn Đới</p>
+  </footer>
+  <script>
+    function goBack() {
+        window.history.back(); 
+    }
+</script>
+</body>
+</html>

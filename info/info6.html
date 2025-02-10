@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đài Nguyên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      font-size: 20px;
+    }
+    header {
+            background-image: url('../img/tundra1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        header:hover h1 {
+            opacity: 0;
+        }
+        header::after {
+            content: 'Return to Previous Page';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        header:hover::after {
+            opacity: 1; 
+        }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #4682B4;
+    }
+    img {
+        width: 800px; 
+      height: 600px; 
+      object-fit: cover; 
+      display: block;
+      border-radius: 10px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section p {
+      text-align: justify;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header onclick="goBack()">
+    <h1>Đài Nguyên</h1>
+    <p>Khám phá hệ sinh thái lạnh giá và độc đáo của vùng đài nguyên</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Giới thiệu chung</h2>
+      <img src="../img/tundra2.jpg" alt="Đài Nguyên">
+      <p>Đài nguyên là hệ sinh thái lạnh giá, nằm ở vùng cực và vùng núi cao, nơi có nhiệt độ thấp và thảm thực vật chủ yếu là địa y, rêu và cây bụi thấp.</p>
+    </div>
+
+    <div class="section">
+      <h2>Phân bố địa lý</h2>
+      <p>Đài nguyên phân bố chủ yếu ở Bắc Cực (Alaska, Canada, Nga) và một số vùng núi cao như dãy Himalaya và Andes.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đặc điểm khí hậu</h2>
+      <p>Khí hậu lạnh giá quanh năm, với mùa đông kéo dài và nhiệt độ có thể xuống dưới -50°C. Mùa hè ngắn và nhiệt độ chỉ tăng nhẹ.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đa dạng sinh học</h2>
+      <img src="../img/tundra3.jpg" alt="Đa dạng sinh học Đài Nguyên">
+      <p>Đài nguyên là nơi sinh sống của các loài động vật như tuần lộc, gấu Bắc Cực, cáo Bắc Cực và nhiều loài chim di cư. Thực vật chủ yếu là địa y, rêu và cây bụi thấp.</p>
+    </div>
+
+    <div class="section">
+      <h2>Thảm thực vật</h2>
+      <p>Thảm thực vật đài nguyên chủ yếu bao gồm địa y, rêu, cỏ và cây bụi thấp. Cây cối không thể phát triển cao do lớp băng vĩnh cửu và khí hậu khắc nghiệt.</p>
+    </div>
+
+    <div class="section">
+      <h2>Vai trò sinh thái</h2>
+      <p>Đài nguyên đóng vai trò quan trọng trong việc điều hòa khí hậu toàn cầu, lưu trữ carbon và là nơi sinh sống của nhiều loài động thực vật đặc hữu.</p>
+    </div>
+
+    <div class="section">
+      <h2>Tác động của con người</h2>
+      <img src="../img/tundra4.jpg" alt="Tác động của con người lên đài nguyên">
+      <p>Con người khai thác dầu khí, xây dựng cơ sở hạ tầng và săn bắn quá mức, dẫn đến suy thoái môi trường và mất đa dạng sinh học.</p>
+    </div>
+
+    <div class="section">
+      <h2>Bảo tồn</h2>
+      <p>Các nỗ lực bảo tồn bao gồm thành lập các khu bảo tồn, quản lý bền vững tài nguyên và nghiên cứu tác động của biến đổi khí hậu.</p>
+    </div>
+
+    <div class="section">
+      <h2>Kết luận</h2>
+      <p>Đài nguyên là một hệ sinh thái độc đáo và quan trọng, mang lại nhiều lợi ích cho con người và môi trường. Cần có biện pháp bảo vệ và phát triển bền vững để duy trì sự cân bằng sinh thái.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 | Trang web về Đài Nguyên</p>
+  </footer>
+  <script>
+    function goBack() {
+        window.history.back(); 
+    }
+</script>
+</body>
+</html>

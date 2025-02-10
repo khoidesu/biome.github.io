@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sa Mạc</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      font-size: 20px;
+    }
+    header {
+            background-image: url('../img/desert1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        header:hover h1 {
+            opacity: 0;
+        }
+        header::after {
+            content: 'Return to Previous Page';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        header:hover::after {
+            opacity: 1; 
+        }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #D2691E;
+    }
+    img {
+        width: 800px; 
+      height: 600px; 
+      object-fit: cover; 
+      display: block;
+      border-radius: 10px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section p {
+      text-align: justify;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header onclick="goBack()">
+    <h1>Sa Mạc</h1>
+    <p>Khám phá hệ sinh thái khô cằn và độc đáo của sa mạc</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Giới thiệu chung</h2>
+      <img src="../img/desert2.jpg" alt="Sa Mạc">
+      <p>Sa mạc là khu vực có lượng mưa rất thấp, thường dưới 250 mm/năm, với điều kiện khí hậu khắc nghiệt, nóng vào ban ngày và lạnh vào ban đêm.</p>
+    </div>
+
+    <div class="section">
+      <h2>Phân bố địa lý</h2>
+      <p>Sa mạc phân bố rộng rãi trên thế giới, bao gồm Sahara (châu Phi), sa mạc Arabian (Trung Đông), sa mạc Gobi (châu Á) và sa mạc Mojave (Bắc Mỹ).</p>
+    </div>
+
+    <div class="section">
+      <h2>Đặc điểm khí hậu</h2>
+      <p>Khí hậu sa mạc đặc trưng bởi nhiệt độ cao vào ban ngày và thấp vào ban đêm. Lượng mưa rất ít, thường xảy ra trong thời gian ngắn.</p>
+    </div>
+
+    <div class="section">
+      <h2>Đa dạng sinh học</h2>
+      <img src="../img/desert3.jpg" alt="Đa dạng sinh học Sa Mạc">
+      <p>Mặc dù khắc nghiệt, sa mạc vẫn là nơi sinh sống của nhiều loài động thực vật thích nghi như xương rồng, lạc đà, bò cạp và các loài bò sát.</p>
+    </div>
+
+    <div class="section">
+      <h2>Thảm thực vật</h2>
+      <p>Thảm thực vật sa mạc thường thưa thớt, chủ yếu là các loài cây chịu hạn như xương rồng, cỏ sa mạc và cây bụi nhỏ.</p>
+    </div>
+
+    <div class="section">
+      <h2>Vai trò sinh thái</h2>
+      <p>Sa mạc đóng vai trò quan trọng trong việc điều hòa khí hậu toàn cầu và là nơi lưu trữ các nguồn tài nguyên khoáng sản quý giá.</p>
+    </div>
+
+    <div class="section">
+      <h2>Tác động của con người</h2>
+      <img src="../img/desert4.jpg" alt="Tác động của con người lên sa mạc">
+      <p>Con người khai thác tài nguyên, chăn thả gia súc quá mức và mở rộng đô thị, dẫn đến sa mạc hóa và suy thoái môi trường.</p>
+    </div>
+
+    <div class="section">
+      <h2>Bảo tồn</h2>
+      <p>Các nỗ lực bảo tồn bao gồm quản lý bền vững tài nguyên, phục hồi hệ sinh thái và ngăn chặn sa mạc hóa.</p>
+    </div>
+
+    <div class="section">
+      <h2>Kết luận</h2>
+      <p>Sa mạc là một hệ sinh thái độc đáo và quan trọng, mang lại nhiều lợi ích cho con người và môi trường. Cần có biện pháp bảo vệ và phát triển bền vững để duy trì sự cân bằng sinh thái.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 | Trang web về Sa Mạc</p>
+  </footer>
+  <script>
+    function goBack() {
+        window.history.back(); 
+    }
+</script>
+</body>
+</html>
